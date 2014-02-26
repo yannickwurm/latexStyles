@@ -1,0 +1,18 @@
+=== Molecular ecology stylesheet ===
+1. The custom-bib package (with natbib activated) is extremely useful. Ran something like <code>latex merlin.mbx maybe?</code> and answered lots of questions to end up with a .dbj file. That can be edited by hand with help of the manual (very important!).
+then <code>latex molEcol.dbj</code> creates the <code>molEcol.bst</code> file.
+
+2. In the bst file, modified
+ <code>
+FUNCTION {bbl.etal}
+{ "\bbletal{}"}
+ </code>
+to
+ <code>
+FUNCTION {bbl.etal}
+{ "\bbletal{}."}
+ </code>
+
+3. Use that bst file for your bibliography.
+
+4. Latex preamble requires natbib and <code>\setcitestyle{citesep={;},aysep={}}</code>

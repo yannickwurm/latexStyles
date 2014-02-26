@@ -1,0 +1,890 @@
+%% LyX 1.6.4.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english,notitlepage]{report}
+\usepackage{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2.5cm,rmargin=2.5cm}
+\pagestyle{plain}
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{3}
+\usepackage{xcolor}
+\usepackage{babel}
+
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{amstext}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[authoryear]{natbib}
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+\doublespacing
+\usepackage[unicode=true, 
+ bookmarks=false,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+\hypersetup{
+ pdfauthor={Yannick Wurm}}
+ 
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% A simple dot to overcome graphicx limitations
+\newcommand{\lyxdot}{.}
+
+\providecolor{lyxadded}{rgb}{0,0,1}
+\providecolor{lyxdeleted}{rgb}{1,0,0}
+%% Change tracking with ulem
+\newcommand{\lyxadded}[3]{{\texorpdfstring{\color{lyxadded}}{}#3}}
+\newcommand{\lyxdeleted}[3]{{\texorpdfstring{\color{lyxdeleted}\sout{#3}}{}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\renewcommand{\harvardurl}{URL:\url}
+
+\setcitestyle{citesep={;},aysep={}}
+
+
+\usepackage{lineno}
+
+\makeatother
+
+\begin{document}
+ \date{ } 
+
+
+\title{Changes in reproductive roles are associated with changes in gene
+expression in fire ant queens}
+
+
+\author{Yannick Wurm, John Wang and Laurent Keller}
+
+\maketitle
+\vfill{}
+
+\begin{description}
+\begin{singlespace}
+\item [{Author's~names~with~initials:}] \noindent Yannick Wurm, YW;
+John Wang, JW; Laurent Keller, LK
+\item [{Postal~address~for~all~authors:}] \noindent Department of Ecology
+and Evolution, Biophore, University of Lausanne, 1015 Lausanne, Switzerland.
+\item [{Keywords:}] \noindent \emph{Solenopsis invicta}, competition, reproduction,
+timecourse, gene expression.
+\item [{Corresponding~author:}] \noindent Yannick Wurm\\
+Department of Ecology and Evolution, Biophore, \\
+Université de Lausanne, 1015 Lausanne,\\
+Switzerland\@.\\
+Fax: +41 21 692 4165\\
+yannick.wurm@unil.ch
+\item [{Running~Title:}] \noindent Reproductive Opportunity and Gene Expression\end{singlespace}
+
+\end{description}
+\pagebreak{}\begin{linenumbers}
+
+
+\section{Abstract}
+
+In species with social hierarchies, the death of dominant individuals
+typically upheaves the social hierarchy and provides an opportunity
+for subordinate individuals to become reproductives. Such a phenomenon
+occurs in the monogyne form of the fire ant\emph{, Solenopsis invicta,
+}where colonies typically contain a single wingless reproductive queen,
+thousands of workers and hundreds of winged non-reproductive virgin
+queens. Upon the death of the mother queen, many virgin queens shed
+their wings and initiate reproductive development instead of departing
+on a mating flight. Workers progressively execute almost all of them
+over the following weeks. 
+
+To identify the molecular changes that occur in virgin queens as they
+perceive the loss of their mother queen and begin to compete for reproductive
+dominance, we collected virgin queens before the loss of their mother
+queen, six hours after orphaning and 24 hours after orphaning. Their
+RNA was extracted and hybridized against microarrays to examine the
+expression levels of approximately 10,000 genes. We identified 297
+genes that were consistently differentially expressed after orphaning.
+These include genes that are putatively involved in the signaling
+and onset of reproductive development, as well as genes underlying
+major physiological changes in the young queens. 
+
+\pagebreak{}
+
+
+\section{Introduction}
+
+Reproduction is monopolized by only a small number of individuals
+in many group-living animals. Which individuals reproduce can be determined
+by fights for dominance or territory, by seniority within the group,
+by genotype and by other factors \citep{Solomon1997CooperativeBreedingInMammals,KellerQueenBook93,KellerGreenBeard1998,TreeKellerReeve94}.
+\textcolor{blue}{The social stimuli responsible for changes in reproductive
+hierarchies are well-documented in many animals \citep{Solomon1997CooperativeBreedingInMammals}
+and several studies focused on identifying molecular differences between
+established dominants and subordinates \citep{renn:2004,Grozinger:2007brainVirginQ.SterileAndReproductiveWorkers,Roberge2008}.
+However, only a few studies examined the molecular and physiological
+mechanisms linking social stimuli to changes in reproductive status.}
+In the cichlid fish \emph{Astatotilapia burtoni}, disappearance of
+the dominant male leads to rapid reactions in subordinate males, including
+dramatic changes in body coloration and behavior, growth of certain
+brain regions and increases in brain levels of \emph{gonadotropin
+releasing hormone 1 }and\emph{ early growth response factor 1} \citep{Burmeister2005Rapid-behaviora,White2002GnRHSocialRegulation}.
+Similarly, the transition from subordinate to breeder status in white-browed
+sparrow weavers is accompanied by changes in type of song, morphology
+of song-related brain areas, and an increase in levels of two hormone
+receptors and two synaptic proteins in a song-related brain area \citep{Voigt2007Socially-induce}.
+Changes in brain morphology also accompany the transition from subordinate
+to breeder status in naked mole rats \citep{Holmes2007Social-control-}.
+\textcolor{blue}{While the previous studies provide valuable insight
+into the mechanisms involved in social status differences, they either
+focused on brain morphology, a few candidate genes during the transition
+from subordinate to breeder, or fixed gene expression differences
+in established dominance hierarchies.} 
+
+Social insects provide excellent models for studying the mechanisms
+involved in reproductive competition \citep{ROSELER1991,ROSELER1984,Dietemann2006,Neumann2000,KellerQueenBook93}.
+In eusocial bees, wasps and ants there is a clear division of labor
+with one or a few individuals monopolizing reproduction. Differences
+in reproductive roles are generally associated with tremendous physiological
+and behavioral modifications \citep{insectSocieties1971,bourkeFranksBook95}.
+This has led to many behavioral and hormone-based experiments including
+some in fire ants that have even succeeded in isolating glands and
+compounds involved in maintaining social dominance hierarchies \citep{VargoLaurel1994,VargoHusley2000,Vargo1999PhysiolEntomol,brentVargoJIP2003,vandDerMeer1980}.
+Investigating social life at a \textcolor{blue}{broad molecular}
+scale has only recently become possible with the development of genomic
+tools for social insects \citep{beeGenome,wangESTs2007,Wurm:2009wo}.
+Some of the first studies focused on \textcolor{blue}{identifying
+gene expression} differences between reproductive and non-reproductive
+castes \textcolor{blue}{\citep{Pereboom:2005yq,Weil2009Comparison-of-q,jemielityCasteDifferences,Grozinger:2007brainVirginQ.SterileAndReproductiveWorkers}},
+and others have investigated the link between social context and gene
+activity \textcolor{blue}{\citep{Toth:2007lr,wang-plosgenetic,grozingerPNAS03}}.
+However, very little still is known about the changes in gene expression
+associated with changes in reproductive roles.
+
+The red imported fire ant, \emph{Solenopsis invicta,} represents a
+particularly attractive model for studying the onset of competition
+between subordinate individuals. During the reproductive season, colonies
+of the monogyne form (single queen per colony) can produce hundreds
+or even thousands of young virgin daughter queens. These virgin queens
+spend the next few weeks building up fat reserves within the colony.
+Once they reach sexual maturity, they do not immediately become reproductive
+because\textcolor{blue}{{} supernumerary reproductive queens} are executed
+by the workers \citep{vargoporter1993,VargoLaurel1994}. Thus, virgin
+queens remain in the parental nest without reproducing until they
+participate in a mating flight and attempt to found their own colony.
+However, a remarkable alternative exists in \emph{S. invicta} when
+the mother queen dies. \textcolor{blue}{During the days following
+orphaning, many young queens shed their wings and initiate reproductive
+development. Additionally, these young queens begin emitting} pheromonal
+signals to which nestmate queens and workers react. When virgin nestmate
+queens perceive such signals, they refrain from shedding their own
+wings and initiating reproductive development \citep{FletcherCherixBlum1983,Vargo1999PhysiolEntomol}.
+When orphaned workers perceive pheromonal signals emitted by queens
+initiating reproductive development, they begin to tend to these queens
+\citep{Blum1981Pheromonal-Cont}. However, if several queens produce
+signals associated with initiation of reproductive development, the
+workers will progressively execute almost all of them over the next
+few weeks \textcolor{blue}{(\citealp{Blum1983Regulation-of-Q}; timeline
+of events summarized in Figure \ref{fig:Timing-of-post-orphaning})}.
+The surviving virgin queen or queens are thus “elected” by workers
+to replace the mother queen. These queens are unmated and thus unable
+to replenish the colony's worker force. However, until the colony's
+workers have died out, the queens can lay thousands of haploid eggs
+that develop into haploid reproductive males \citep{Tschinkel:2006book}.
+\textcolor{blue}{Contrarily to many other ant species, \emph{S. invicta}
+workers lack functional ovaries and are completely sterile \citep{Tschinkel:2006book}.} 
+
+The aim of this study was to identify the molecular changes that occur
+in virgin queens as they perceive the loss of their mother queen and
+begin to compete for reproductive dominance. For this, we conducted
+orphaning simulations and examined gene expression using a microarray
+representing some 10,000 genes. We identified several categories of
+genes that are consistently upregulated after orphaning, some of which
+are also upregulated at the onset of reproductive development in other
+insects.
+
+
+\section{Materials and methods}
+
+
+\subsection{Ant collection and rearing}
+
+Eight monogyne \emph{S. invicta }fire ant colonies, each containing
+at least 50 winged virgin queens \textcolor{blue}{and between 5,000
+and 10,000 workers}, were collected \textcolor{blue}{from a single
+population} in Athens and Lexington, GA, USA in June 2006. \textcolor{blue}{There
+is genetic variability between colonies, however it is moderate because
+only few\emph{ }queens founded the North American \emph{S. invicta
+}population when they were introduced from South America in the 1930s
+\citep{Ross1993Effect-of-a-fou,RossShoemaker2008NumberOfFounders}.}
+All colonies were returned to the laboratory and reared for one month
+under standard conditions \citep{jouvenaz1977}. Queen- and male-destined
+brood were \textcolor{blue}{identified by their large size and}
+removed weekly \textcolor{blue}{to ensure that only field-reared
+queens be used in for our experiment. Indeed, laboratory-reared queens
+do not normally grow to the same sizes as field-reared queens and
+rarely shed wings or initiate reproductive development after orphaning
+(E. Vargo, NC State, Raleigh)}. We determined that each study colony
+was of the monogyne social form using several lines of evidence. Nest
+shape, nest density and worker size distribution were used to make
+initial identifications of social form in the field \citep{Shoemaker:2006PopGenetics}.
+Subsequently, monogyny was confirmed for each colony by the presence
+of a single, highly physogastric, wingless queen. Finally, the social
+form was further verified by electrophoretically detecting only the
+\emph{B}\textbf{\emph{ }}but not the \emph{b }allele of \emph{Gp-9
+}in pooled samples of 20 workers from each colony (lack of the \emph{b
+}allele is diagnostic for monogyny in \emph{S. invicta} in the USA
+\citep{ross:1997genetics,KellerGreenBeard1998,kriegerRoss02,Shoemaker:2006PopGenetics}). 
+
+
+\subsection{Orphaning simulation, RNA isolation and microarray hybridization}
+
+We removed the mother queen and collected virgin queens just before
+orphaning as well as 6 and 24 hours after orphaning (subsequently
+referred to as time points t$_{\text{0h}}$, t$_{\text{6h}}$ and
+t$_{\text{24h}}$) to examine the \textcolor{blue}{onset of} the
+molecular reaction to orphaning in virgin \emph{S. invicta }queens.
+However, virgin queens emit pheromonal signals after orphaning that
+are similar to those of an functional queen and can thus influence
+each other \citep{Vargo1999PhysiolEntomol,FletcherCherixBlum1983}.
+We attempted to minimize such effects and simplify interpretation
+of results\textcolor{blue}{{} by taking advantage of the fact that }\textcolor{blue}{\emph{S.
+invicta }}\textcolor{blue}{is a very opportunistic species that changes
+nests often in its native habitat which includes large flood plains
+\citep{Tschinkel:2006book}. We sampled queens according to the following
+setup}: For t$_{\text{0h}}$, we haphazardly collected five virgin
+queens from the foraging area of each source colony and individually
+flash-froze them with liquid nitrogen in tubes containing 1g of 1.4mm
+Zirconium Silicate beads (QuackenBush). We placed ten additional virgin
+queens per source colony into individual \textcolor{blue}{small nests
+}with 2g of mixed workers and brood\textcolor{blue}{. The density
+of workers and brood was comparable to that found in the source colonies.}
+\textcolor{blue}{All virgin queens isolated in this manner are expected
+to shed their wings and initiate reproductive development \citep{Blum1981Pheromonal-Cont,Burns:2007fk}.}
+\textcolor{blue}{We thus} simulated orphaning for a total of 80 virgin
+queens from a total of eight source colonies.\textcolor{blue}{{} }We
+harvested half of the virgin queens thus treated after 6 hours (t$_{\text{6h}}$)
+and the remaining queens after 24 hours (t$_{\text{24h}}$). All collected
+queens were individually flash-frozen immediately after collection
+as described above. Samples were then stabilized until RNA isolation
+by the addition of 900 $\mu$l of cold Trizol reagent (Invitrogen)
+followed by homogenization with a FastPrep instrument (MP Biomedicals)
+and storage at -80\textdegree{}C.\textcolor{blue}{{} In summary, we
+had thus collected five queens at t$_{\text{0h}}$, five queens at
+t$_{\text{6h}}$ and five queens at t$_{\text{24h}}$from each of
+eight source colonies, constituting eight biological replicates for
+our experiment (See also Supporting Figure 1). We chose to pool five
+individuals from each replicate to reduce the impact of between-individual
+differences \citep{kendziorski:2005}, and conducted eight replicates
+to obtain sufficient statistical power with a feasible workload. In
+comparison, other studies that examined the effects of social context
+or mating used four replicates from a single }\textcolor{blue}{\emph{Drosophila
+}}\textcolor{blue}{strain \citep{McGraw2004MatingSpermACPsFlies},
+six replicates using different bees from a single colony \citep{grozingerMatingChanges},
+six true biological replicates \citep{Renn2008Fish-and-chips,Roberge2008},
+and examined pools of individuals from sixteen independent pairs of
+ant colonies \citep{wang-plosgenetic}.}
+
+Total RNA was isolated from all individuals using the Trizol protocol.
+RNA was pooled from 5 individuals per source colony for each time
+point and treated with DNA-free (Ambion). Subsequently, impurities
+were filtered away with MicroCon-30 spin columns (Millipore), and
+RNA quality was assessed on a 1\% agarose gel prior to amplification
+using the MessageAmp II kit (Ambion). Amplified mRNA samples from
+the eight colonies at three timepoints (t$_{\text{0h}}$, t$_{\text{6h}}$
+and t$_{\text{24h}}$) were labeled, hybridized to microarrays made
+from 22,560 independent fire ant cDNA spots \textcolor{blue}{\citep[Microarray construction described in ][]{wangESTs2007},}
+and scanned as previously described \citep{wang-plosgenetic}. This
+was done according to a dye-balanced loop design (Supporting Figure
+1). For all procedures, precautions including randomization of sample
+order were taken to avoid introducing unwanted biases. 
+
+
+\subsection{Microarray analysis}
+
+\textcolor{blue}{We followed a standard microarray analysis procedure,
+guided by the documentation of the Bioconductor limma package \citep{smyth:2005,smyth2004limma,bioc2004}.
+In brief, m}edian signal and background levels for each probe were
+extracted from scanned microarray images using Axon Genepix software.
+The limma\emph{ }2.16 package \citep{smyth2004limma} in R 2.8.1 \citep{r_reference:2007}
+was used for normexp background correction, print-tip loess\emph{
+}normalization within arrays, and aquantile normalization between
+arrays \citep{Smyth2003Normalization-o}. The arrayQualityMetrics\emph{
+}package \citep{arrayQualityMetricsKauffmann2009} and custom R scripts
+were used for quality control. The 18,444 \emph{Solenopsis invicta}
+cDNA spots yielding a single PCR band \citep{wangESTs2007} and passing
+visual and automated inspection were used for analysis.\textcolor{blue}{{}
+We constructed a design matrix incorporating effects for sampling
+times (t$_{\text{0h}}$, t$_{\text{6h}}$ and t$_{\text{24h}}$),
+biological replicate (eight colonies) and the two dyes. The model
+that is fit to each gene may thus be represented as {}``$expression=timepoint+replicate+dye$''.
+The limma}\textcolor{blue}{\emph{ }}\textcolor{blue}{package was used
+for bayesian fitting of the model.} Differential expression was determined
+for the contrasts {}``t$_{\text{24h}}$ vs. t$_{\text{0h}}$'',
+{}``t$_{\text{24h}}$ vs. t$_{\text{6h}}$'', and {}``t$_{\text{6h}}$
+vs. t$_{\text{0h}}$'' according to the nested F method in limma.
+Briefly, a moderated F test determined that 521 microarray clones
+were differentially expressed for at least one of the \textcolor{blue}{contrasts
+with a 10\% False Discovery Rate \citep[FDR; ][]{BenjaminiHochberg1995}}.
+Subsequently, significance of differential expression was assigned
+to one or several contrasts. \textcolor{blue}{In comparison, the effects
+of mating on honey bees queens were determined with 5\% FDR \citep{grozingerMatingChanges},
+a comparison between fire ant workers from different social structures
+used 10\% FDR \citep{wang-plosgenetic}, and the effect of the presence
+of brood on honey bee workers was determined with 30\% FDR \citep{Alaux:2009qv}.}
+
+
+\subsection{Sequence data, annotation and gene category analysis}
+
+\textcolor{blue}{The published sequences of all microarray clones
+\citep{wangESTs2007} were assembled along with data from two runs
+of 454 sequencing of independently constructed cDNA libraries} (Y.
+Wurm, D. Hahn and DD. Shoemaker; DH and DDS are at USDA-ARS, Gainesville).
+High quality sequence information was \textcolor{blue}{obtained }for\emph{
+}16,227 out of the 18,444 \emph{S. invicta }cDNA clones used for gene
+expression analysis. This was also the case for 475 out of the 521
+significantly differentially expressed clones.
+
+Annotation was obtained via several methods. First, we ran NCBI BLASTX
+2.2.16 to compare assembled fire ant sequences with the non-redundant
+protein database (EMBL release 99). We retained informative gene descriptions
+of hits with E-value < $10^{-5}$. Second, Gene Ontology (GO) \citep{GeneOntology200}
+annotations were inferred using BLASTX as previously described \citep{Wurm:2009wo}.
+Finally, each fire ant sequence was manually assigned a single descriptive
+category. The manually assigned gene category putatively encapsulates
+the general function of each sequence and is derived subjectively
+by examining the SwissProt or Ensembl database entries of the five
+best BLASTX hits (E-values < $10^{-5}$), with an emphasis on GO,
+Interpro, and PANTHER annotations. \textcolor{blue}{The manual annotation
+comprises a total of 34 general gene categories} (J. Wang, M. Nicolas
+and L. Ometto, University of Lausanne, Lausanne).
+
+Overrepresentation of manually assigned gene categories and GO categories
+was determined, respectively, using exact one-sided Fisher tests in
+R and the Elim test from the topGO Bioconductor package \citep{topGo2006}
+limited to categories containing at least 10 fire ant genes. \textcolor{blue}{These
+included 514 Biological Processes, 131 Cellular Components and 171
+Molecular Functions.}
+
+
+\subsection{Comparison with data from other species}
+
+\textcolor{blue}{We wanted to determine the extent to which gene expression
+differences linked to changes in social context and reproductive status
+in this study are likely to play similar roles in other insects. To
+do this, we downloaded lists of significantly over- and under-expressed
+genes from studies that examined the transition to reproduction in
+flies, bees and mosquitos \citep{LawniczakBegun2004FlyMating,McGraw2004MatingSpermACPsFlies,Rogers2008AnophelesMating,grozingerMatingChanges}
+as well as the fixed differences in reproductive status between honey
+bee queens and workers \citep{Grozinger:2007brainVirginQ.SterileAndReproductiveWorkers}.}
+Mapping between microarray probes and coding sequences was either
+provided by the study's authors \citep[for ][]{Grozinger:2007brainVirginQ.SterileAndReproductiveWorkers},
+obtained by BLASTN of probe sequences to coding sequences \citep[for][]{grozingerMatingChanges}
+or downloaded \citep[for][]{LawniczakBegun2004FlyMating,McGraw2004MatingSpermACPsFlies,Rogers2008AnophelesMating}
+from BioMart \citep{Biomart2009}. \textcolor{blue}{Orthology information
+was required to compare lists of signficant genes between ants and
+the other species, however such information is practically nonexistant.
+This is in part because and only partial transcriptome and no proteome
+or genomic sequence data are published for ants.} To obtain orthology
+information, we modified the Inparanoid ortholog identification pipeline
+\citep{inparanoid} as follows: BLASTX\emph{ }was replaced with\emph{
+}TBLASTX and stringency was reduced so that match areas must span
+at least 25\% of the longer sequence with actual matching segments
+aligning with at least 10\% of the longer sequence. We independently
+ran this modified Inparanoid pipeline on the assembled fire ant sequences
+and the complete set of coding sequences of each of the following
+species: \emph{Drosophila melanogaster} (Flybase release 5.9), \emph{Apis
+mellifera} (Honey Bee Official Gene Set pre-release 2) and \emph{Anopheles
+gambiae} (AgamP3.4).
+
+\textcolor{blue}{To determine the extent of overlap between two lists
+of significant genes, we constructed a 2-by-2 contingency table containing:
+the number of orthologous genes in both lists, the number of genes
+examined in the relevant studies but not part of the significant lists,
+and the numbers of genes that were examined in both studies but in
+only one of the two lists of significant genes. Subsequently, we conducted
+an exact one-sided Fisher test to determine whether the number of
+genes in both lists was higher than would be expected by chance. Only
+significant results (p<0.05) are reported}.
+
+\textcolor{blue}{We determined the extents of overlap between two
+lists of significant genes from our study (the 146 genes upregulated
+at one point after orphaning and the 152 genes downregulated at one
+point after orphaning) and the lists of genes from each of the other
+studies. This was possible for a reduced set of genes that are both
+putatively orthologous between fire ants and the species from the
+other study and present on both the ant microarray and the microarray
+used in the other study. }For the \citet{Grozinger:2007brainVirginQ.SterileAndReproductiveWorkers}
+study, we \textcolor{blue}{report significant overlap comparing the
+list of genes upregulated at one point after orphaning in our study}
+with the list of \textcolor{blue}{549 bee genes in the Honey Bee Official
+Gene Set} that were more highly expressed in \textcolor{blue}{honey
+bee} queens than in reproductive workers \textcolor{blue}{as well
+as the list of 619 bee genes that were more highly expressed in honey
+bee queens than in sterile workers}. For the \citet{grozingerMatingChanges}
+study, we \textcolor{blue}{report significant overlap comparing the
+list of genes upregulated at one point after orphaning in our study}
+with the list of 441 bee genes that were more highly expressed in
+mated than virgin\textcolor{blue}{{} honey bee queens, as well as with
+the list of 356 genes that were more highly expressed in honey bee
+queens that were mated but not yet laying eggs than in queens that
+were mated and egg-laying}. For all remaining comparisons of pairs
+of lists of significant ant and honey bee genes, the overlaps were
+either non-significant, or were not examined because they concerned
+five genes or less.
+
+For the \citet{Rogers2008AnophelesMating} study, we obtained results
+comparing our \textcolor{blue}{two fire ant gene lists} with a combined
+list of 1,663 \emph{Anopheles} genes that were either more highly
+expressed in females 2h, 6h and 24h after mating than in virgins or
+more highly expressed 6h than 2h or 24h than 6h after mating\textcolor{blue}{,
+as well as with the complementary list of 1,586 genes}\textcolor{blue}{\emph{
+}}\textcolor{blue}{that were less highly expressed in virgins than
+in mated female }\textcolor{blue}{\emph{Anopheles}}. For the \citet{McGraw2004MatingSpermACPsFlies}
+and \citet{LawniczakBegun2004FlyMating} studies, we compared our
+results with all individual lists of \emph{Drosophila }genes that
+were differentially expressed in response to different aspects of
+mating, as well as with a combined list of all mating-response genes
+they had identified. 
+
+
+\section{Results}
+
+
+\subsection{Differential gene expression after orphaning}
+
+Four hundred seventy-five of the \textcolor{blue}{16,227 sequenced}
+cDNA clones, putatively representing 297 genes, were significantly
+differentially expressed between the samples of virgin queens collected
+0 hours, 6 hours and 24 hours after orphaning (respectively t$_{\text{0h}}$,
+t$_{\text{6h}}$ and t$_{\text{24h}}$). The remaining genes were
+either expressed similarly before and after orphaning, were highly
+variable between biological replicates, or yielded signals too weak
+for reliable assessment of differential expression. Among the 297
+significantly differentially expressed genes, four were upregulated
+within 6 hours of orphaning, while one was downregulated. One hundred
+forty-four genes were more highly expressed twenty-four hours after
+orphaning than at t$\mathcal{_{\text{0h}}}$ or at t$\mathcal{_{\text{6h}}}$
+including one of the four genes that was already upregulated after
+6 hours, while a total of 152 genes were significantly downregulated
+after 24 hours (Figure \ref{Fig:numbersOfGenes}). One of the genes
+significantly upregulated after 6 hours was significantly downregulated
+between 6 and 24 hours. The significant genes are listed in Supporting
+Tables 1 and 2. These gene expression changes precede or are independent
+of wing shedding since none of 40 virgin queens collected 6 hours
+after orphaning and only three of 40 virgin queens collected 24 hours
+after orphaning had shed their wings. 
+
+
+\subsection{Gene set enrichment analysis}
+
+We bioinformatically annotated the genes that were significantly upregulated
+or downregulated after orphaning and compared their annotations with
+the annotations of all genes examined on the microarray by using two
+different annotation methods. From our \textcolor{blue}{manually
+assigned} annotation categories,\emph{ }two gene categories\emph{
+}were overrepresented among upregulated genes. These were \emph{proteasome
+}(11 observed, 1.2 expected, exact one-sided Fisher test $p=1*10^{-7}$)
+and \emph{protein transport} (10 observed, 1.5 expected, exact one-sided
+Fisher test $p=4*10^{-6}$\emph{ }). No other \textcolor{blue}{manually
+assigned annotation categories} were overrepresented among up or
+downregulated genes. From the BLAST-inferred Gene Ontology categories,
+several categories were overrepresented among up- and downregulated
+genes (complete list in Table \ref{Table 1}). In particular, genes
+putatively part of the \emph{proteasomal complex} were overrepresented
+among the upregulated genes (7 observed, 0.7 expected, $p=0.0003$,\emph{
+}topGO Elim\emph{ }test, adjusted for 10\% False Discovery Rate (FDR)).
+Among downregulated genes, those putatively located in \emph{microsomes}
+and involved in \emph{oxidation reduction }were overrepresented (respectively
+6 observed, 0.5 expected, FDR adjusted\emph{ }topGO Elim test $p=0.0007$,
+and 14 observed, 3.3 expected, FDR adjusted topGO Elim test$p=0.0005$).
+Additionally, genes that putatively have \emph{aromatase activity}
+were overrepresented among the significantly downregulated genes (5
+observed, 0.3 expected, FDR adjusted\emph{ }topGO Elim test $p=0.0014$).
+In fact, all five of these genes are putative \emph{Cytochrome P450}s.
+
+
+\subsection{Genes related to Juvenile Hormone metabolism}
+
+Among the 297 genes significantly differentially expressed in orphaned
+compared to non-orphaned queens, five have sequence similarity to
+genes from other species that are involved in Juvenile Hormone (JH)
+metabolism or response. In particular, three putative JH esterases
+were significantly downregulated after orphaning, while one was significantly
+upregulated. Additionally, a putative JH epoxide hydrolase was significantly
+downregulated after orphaning. Several putative JH inducible genes
+as well as a putative JH esterase-binding gene showed non-significant
+increases in expression level after orphaning (Figure \ref{fig:jhPlot}).
+
+
+\subsection{Comparison of fire ant results with data from honey bees}
+
+\textcolor{blue}{To determine whether the differentially expressed
+genes identified in our study are also differently expressed between
+reproductive and non-reproductive individuals in honey bees, we compared
+our results with the studies of \citet{Grozinger:2007brainVirginQ.SterileAndReproductiveWorkers}
+and \citet{grozingerMatingChanges}. The first of the two studies}
+identified genes differentially expressed between brains of honey
+bee queens and workers. We identified a subset of 902 ant-bee orthologs
+examined in both that study and ours. Genes upregulated in orphaned
+fire ant queens were enriched for genes upregulated in brains of queen
+bees relative to brains of reproductive workers (12 observed, 7.5
+expected, exact one-sided Fisher test $p=0.005$). \textcolor{blue}{There
+was no significant overlap between other pairs of lists of genes from
+the two studies.} Among the twelve genes that overlap between the
+groups of significantly upregulated ant and bee genes (Supporting
+Table 3), four are part of the manually assigned gene category \emph{proteasome}
+(0.2 expected, exact one-sided Fisher test $p=1*10^{-4}$). 
+
+The other study identified genes differentially expressed between
+virgin and mated honey bee queens \citep{grozingerMatingChanges}.
+Among 2,286 ant-bee orthologs examined in our study as well as the
+bee study, 13 genes were more highly expressed in response to orphaning
+in fire ants and in response to mating in honey bee queens (7.7 expected,
+exact one-sided Fisher test $p=0.038$, genes listed in Supporting
+Table 4). Among the thirteen genes that overlap between the two gene
+lists, four are part of the manually assigned gene category \emph{proteasome
+(}0.2 expected, exact one-sided Fisher test $p=1*10^{-4}$). \textcolor{blue}{There
+was no significant overlap between other pairs of lists of genes from
+the two studies.} 
+
+
+\subsection{Comparison of fire ant results with data from dipterans}
+
+\textcolor{blue}{To determine whether the differentially expressed
+genes identified in our study are also involved in the transition
+towards reproduction in other insects, we compared our results with
+those from studies conducted in \emph{Anopheles }and \emph{Drosophila}}.
+The comparison of our results with those of a study on the effects
+of mating in female \emph{Anopheles gambiae }mosquitoes for 1,682
+orthologs ant-\emph{Anopheles} orthologs \citep{Rogers2008AnophelesMating}
+revealed that genes whose level of expression increased after orphaning
+in \emph{S. invicta} queens are enriched for genes that are upregulated
+after mating in \emph{Anopheles} (36 observed, 20.6 expected, exact
+one-sided Fisher test $p=8*10^{-5}$, genes listed in Supporting Table
+5). \textcolor{blue}{There was no significant overlap between other
+pairs of lists of genes from the two studies.} Six of the thirty-six
+genes identified in both studies are part of the manually assigned
+gene category\emph{ proteasome }(0.5 expected, exact one-sided Fisher
+test $p=3*10^{-5}$). 
+
+Similar gene expression studies were also performed in the fruitfly
+\emph{Drosophila melanogaster}. We found no significant overlap between
+expression changes due to orphaning in fire ant queens and changes
+due to mating in female \emph{Drosophila} \citep{LawniczakBegun2004FlyMating,McGraw2004MatingSpermACPsFlies},
+nor between orphaned fire ant queens and specific aspects of \emph{Drosophila}
+mating: the mating process itself (without receiving sperm), receiving
+sperm, or receiving particular accessory proteins normally part of
+sperm \citep{McGraw2004MatingSpermACPsFlies}. 
+
+
+\section{Discussion}
+
+We used microarrays to conduct a genome-wide survey of gene expression
+in virgin \emph{Solenopsis invicta }fire ant queens over the 24 hours
+that follow orphaning from their mother queen. We identified five
+genes that are consistently differentially expressed within six hours
+of orphaning. These early response genes may be responsible for some
+of the additional 292 gene expression changes that take place within
+24 hours of orphaning. The annotations of the differentially expressed
+genes indicate that they potentially are involved in many different
+functions, including signaling reproductive status, reproductive development,
+proteasomal activity, \textcolor{blue}{protein transport, and regulation
+of chromatin structure and transcription.} We discuss each in turn.
+
+
+\subsection{Genes potentially involved in signaling of reproductive status}
+
+The pheromones that the mother queen uses to signal her presence and
+fertility are currently unknown. Our study revealed that\emph{ Glutathione
+S-transferase} (GST)\emph{ }is the only gene downregulated in virgin
+queens 6 hours after orphaning. Furthermore, an additional GST\emph{
+}as well as five \emph{Cytochrome P450}s are significantly downregulated
+in virgin queens within 24 hours of orphaning. Both GSTs and \emph{Cytochrome
+P450}s are known to be involved in degrading foreign and endogenous
+compounds \citep{CytochromeP450Montellano2005}. \textcolor{blue}{We
+speculate that the virgin queens may use these genes to degrade fertility
+signals produced by the mother queen.} This could be important if
+\textcolor{blue}{maternal fertility signals also triggered reproductive
+development in the virgins}. Alternatively, virgin queens may produce
+their own fertility signals, and simultaneously degrade them using
+the GSTs and \emph{Cytochrome P450s,}\textcolor{blue}{{} hence permitting
+them to avoid aggression from the workers yet be able} to rapidly
+increase levels of fertility signals when orphaned.
+
+We also identified three upregulated genes putatively related to olfactory
+signals, two \emph{chemo-sensory proteins} (CSPs) and one \emph{odorant
+binding protein} (OBP). \textcolor{blue}{The} CSPs and OBP may play
+the roles of carrier proteins \citep{GotzekReview2007,OBPReviewPelosi2005}
+possibly involved in the production of reproductive status signals.
+Interestingly, the gene with the highest sequence similarity to the
+OBP is \emph{Gp-9,} a gene \textcolor{blue}{that is } linked to odor
+differences between queens \citep{KellerGreenBeard1998,GotzekReview2007}
+and \textcolor{blue}{to }the selective execution of queens which lack
+the small \emph{b} allele at this locus in multiple-queen colonies
+of \emph{S. invicta }\citep{Ross:1998pi,KellerGreenBeard1998,ross:2002,kriegerRoss02,GotzekRoss2009}\emph{.
+}The upregulated OBP could similarly be involved in the production
+of a qualitative signal by virgin queens.
+
+
+\subsection{Genes known to be involved in reproductive development in \textcolor{blue}{social
+insects}}
+
+The level of Juvenile Hormone (JH) increases with the onset of reproduction
+in many female insects. \textcolor{blue}{In particular, high JH titers
+have been linked to reproductive dominance in bumble bees as well
+as in }\textcolor{blue}{\emph{Polistes }}\textcolor{blue}{wasps, but
+not in honey bees where JH has been shown to regulate the labor tasks
+between workers \citep[reviewed in][]{Robinson1997Juvenile-hormon}.
+}After orphaning \textcolor{blue}{young }\textcolor{blue}{\emph{S.
+invicta }}\textcolor{blue}{queens}, JH synthesis rate increases and
+JH body content peaks prior to wing shedding (\citealp{brentVargoJIP2003}\textcolor{blue}{;
+see also Figure \ref{fig:Timing-of-post-orphaning})}. The ectopic
+application of synthetic JH to virgin queens leads to wing shedding
+even if the mother queen is present \citep{VargoLaurel1994}, whereas
+applying an inhibitor of JH synthesis represses wing shedding in orphaned
+virgin queens \citep{Burns2002Identification-}. The fact that JH
+level increases after orphaning is consistent with our findings that
+\textcolor{blue}{four} genes putatively involved in JH degradation
+are downregulated after orphaning. Indeed, downregulation of these
+genes should lead to reduced JH degradation and thus to increased
+JH levels. Our data also imply that JH degradation genes are highly
+expressed before orphaning, and thus that JH is already being produced
+and simultaneously degraded before orphaning. Thus, maintenance of
+low JH levels in virgin queens prior to orphaning may be due to the
+simultaneous production and degradation of JH. \textcolor{blue}{This
+has also been suggested to occur in bumble bee workers by \citet{Bloch2000JH-JIP}
+who found that the rate of }\textcolor{blue}{\emph{in vitro}}\textcolor{blue}{{}
+JH synthesis does not reliably indicate hemolymph JH titers. Such
+dual control of JH titer by simultaneous production and degradation
+of JH is known to exist from studies in solitary insects \citep{Kort1981JHReview,Tobe1985CorpusAllatum}.}
+
+Beyond the role of JH, two small-scale studies identified genes associated
+with reproductive differences in ants. In \emph{S. invicta }queens,
+participation in a mating flight triggers wing shedding and reproductive
+development \citep{Tschinkel:2006book} and leads to the upregulation
+\textcolor{blue}{of at least seven genes }\citep{TianVinsonCoates7genes.2004}.
+One of these genes, \emph{Striated Muscle Activator of Rho Signaling}
+(STARS), was also significantly upregulated in our study 6 and 24
+hours after orphaning. Five of the remaining genes, \emph{Vitellogenin-1},\emph{
+Vitellogenin-2},\emph{ Yellow-1},\emph{ Yellow-2} and \emph{Abaecin}
+\textcolor{blue}{were more highly expressed after orphaning, although
+not significantly so.} \textcolor{blue}{A study in the black garden
+ant}\textcolor{blue}{\emph{ Lasius niger}}\textcolor{blue}{{} identified
+seven genes more highly expressed in mature queens than in workers
+\citep{jemielityCasteDifferences}. While none of these genes showed
+significant expression differences in our study, the mean expression
+level for four of them was non-significantly higher after orphaning
+in }\textcolor{blue}{\emph{S. invicta}}\textcolor{blue}{. The remaining
+three genes were respectively absent from the}\textcolor{blue}{\emph{
+S. invicta }}\textcolor{blue}{microarray, similarly expressed, or
+had non-significantly lower mean expression levels after orphaning. }
+
+
+\subsection{Genes that are putatively proteasomal}
+
+Genes with similarity to proteasomal genes were highly overrepresented
+among the genes upregulated after orphaning. Proteasomes are responsible
+for degrading unneeded proteins. The proteasomal genes could be involved
+in degrading wing muscle tissue or storage proteins such as hexamerins
+and vitellogenins that would liberate amino-acids that can be used
+for reproductive development. Alternatively, the increased proteasomal
+activity after orphaning may trigger changes in gene expression or
+cellular proliferation via the respective degradation of transcriptional
+repressors or specific cyclins. Both possibilities are coherent with
+the overrepresentation of proteasomal genes among the genes that we
+identified as being upregulated after orphaning in ant queens and
+also after mating in bees and mosquitoes. This indicates that \textcolor{blue}{the
+role }of proteasomal genes during the onset of reproductive development
+may be evolutionarily conserved. Furthermore, we detected significant
+downregulation of a gene with similarity to \emph{Cellular Repressor
+of E1A-stimulated Genes 1} (\emph{CREG1}) after orphaning. \emph{CREG1}
+has been shown to inhibit growth in human cancer cells and to inhibit
+apoptosis of human muscle cells \citep{Creg2006}. The downregulation
+and degradation of this gene in virgin fire ant queens may similarly
+induce proliferation of ovarian tissue or the apoptosis of wing muscle
+cells.
+
+
+\subsection{Genes putatively involved in protein transport}
+
+Genes sharing sequence identity with those involved in protein transport
+were highly overrepresented among the genes upregulated after orphaning.
+Proteins need to be shuttled between intracellular compartments for
+post-translational modifications as well as signal transduction. Protein
+transportation is also essential for communication between cells via
+the secretion and uptake of proteins \citep{CellBiologyBook2000}.
+The upregulation of putative protein transport genes in orphaned fire
+ant queens could be involved in changes in neuronal activity \citep{Buckley2000RegulationNeuronTrafficking}
+as a response to orphaning. Alternatively, they may be involved in
+ovarian development. 
+
+
+\subsection{Genes putatively involved in transcriptional changes and chromatin
+remodeling}
+
+Three lines of evidence indicate that major transcriptomic and epigenetic
+changes are taking place after orphaning in virgin fire ant queens.
+First, the upregulated genes include two putative \emph{RNA polymerase}
+subunits as well as\textcolor{blue}{{} a putative }\textcolor{blue}{\emph{Mediator
+complex subunit}}\textcolor{blue}{{} involved in protein-coding gene
+transcription }\citep{mediator2005}. Second, a Zinc finger transcription
+factor domain containing gene is downregulated, while \emph{STARS}
+and a RING finger transcription factor domain containing gene are
+upregulated. \emph{STARS} may induce wing muscle degradation as previously
+suggested \citep{TianVinsonCoates7genes.2004}.\textcolor{blue}{{} Finally,}
+genes similar to \emph{Chromobox Homolog protein 1 }and \emph{Nucleoplasmin-like
+protein} are upregulated after orphaning. Both are important for chromatin
+remodeling \citep{heteroChromatin2006,nucleoplasmins2007}. Some or
+all of these gene expression changes could be related to the post-orphaning
+increases in ovarian development and egg production \citep{VargoLaurel1994,Vargo1999PhysiolEntomol}. 
+
+
+
+
+\section{Conclusion}
+
+This study represents the first genome-wide survey of gene expression
+changes in subordinate animals \textcolor{blue}{immediately following}
+the sudden loss of the dominant \textcolor{blue}{individual}. We identified
+297 genes differentially expressed within 24 hours of orphaning in
+virgin \emph{S. invicta }queens. Many of the observed gene expression
+changes are consistent with previous knowledge about the physiological
+changes in virgin queens after orphaning, and some genes related to
+the onset of reproductive development appear to be conserved across
+species from ants to bees and even mosquitoes. Additionally, we detected
+several genes possibly required for the perception or production of
+olfactory signals. These genes may play roles in triggering the onset
+of reproductive development in virgin queens or in signaling reproductive
+status to nestmates. Finally, we found evidence for activation of
+genes putatively involved in muscle degradation and ovarian development.
+However, much work remains to truly understand the molecular-genetic
+cascades of events involved in the competition for reproductive dominance
+between virgin queens. It will be particularly fascinating to understand
+the evolutionary pressures acting upon different genes involved in
+this process. A further challenge will be identifying the basis by
+which workers make decisions regarding which competing queens to execute
+and which to keep.
+
+\bibliographystyle{mine}
+\bibliography{PhdBib1}
+
+
+
+\section{Acknowledgments}
+
+We would like to thank Kenneth G Ross and Dietrich Gotzek for help
+collecting ants, Micah Gardner for help feeding the ants, Christine
+LaMendola and the Lausanne DNA Array Facility for support with molecular
+work, Darlene Goldstein, Frédéric Schütz and the Bioconductor mailing
+list for statistical advice, Rob L Hammond, Julien Roux and the Keller,
+Chapuisat and Robinson-Rechavi labs for stimulating discussions, and
+Kenneth G Ross and D. DeWayne Shoemaker for their helpful comments
+on earlier versions of this manuscript. This work was funded by grants
+from the Swiss National Science Foundation and the Rectorate of the
+University of Lausanne.
+
+
+\section{Figure Legends}
+\begin{description}
+\item [{\textcolor{blue}{Figure~\ref{fig:Timing-of-post-orphaning}}}] \textcolor{blue}{Timeline
+of post-orphaning events in the fire ant (based on the following studies:
+\citet{Barker1979MuscleHistolysis,Blum1981Pheromonal-Cont,Blum1983Regulation-of-Q,VargoLaurel1994,Vargo1999PhysiolEntomol,Burns:2007fk}).}
+\item [{Figure~\ref{Fig:numbersOfGenes}:}] Numbers of genes significantly
+differentially expressed in young fire ant queens within six hours
+(left) and 24 hours of orphaning (right).
+\item [{Figure~\ref{fig:jhPlot}:}] Expression levels of genes related
+to Juvenile Hormone (JH) metabolism and response in virgin fire ant
+queens that are either still in presence of their mother queen or
+have been orphaned for 6 or 24 hours. Only genes with multiple clones
+on the microarray are shown. Error bars represent the standard error
+of the mean expression levels as obtained by independent clones. Genes
+for which at least one representative clone is significantly differentially
+expressed after orphaning are indicated by triangles.
+\end{description}
+
+\section{Table Legend}
+\begin{description}
+\item [{Table~\ref{Table 1}:}] Gene Ontology annotations that are significantly
+enriched among genes that are significantly upregulated or downregulated
+after orphaning.
+\end{description}
+\end{linenumbers}
+
+
+\section{Tables and Figures}
+
+%
+\begin{figure}[H]
+\caption{\label{fig:Timing-of-post-orphaning}}
+
+
+\includegraphics{\string"/Users/yannickwurm/Dropbox/DealationProjAnalysis/2009 - Paper/timecoursePaperResubmission/images/timelineHorizontal169mm\string".eps}
+\end{figure}
+
+
+%
+\begin{figure}[H]
+\centering{}\caption{}
+\includegraphics{images/replaceVennDiagram-Samesize-crop}\label{Fig:numbersOfGenes}
+\end{figure}
+
+
+%
+\begin{figure}[H]
+\centering{}\caption{\label{fig:jhPlot}}
+\includegraphics{images/selectedGenes\lyxdot JHseparated}
+\end{figure}
+
+
+%
+\begin{table}[H]
+\centering{}\caption{\label{Table 1} }
+\includegraphics[width=1\linewidth]{images/BlastGOTable}
+\end{table}
+
+
+
+\section{Author Information Box}
+
+This work is part of Y. Wurm's PhD thesis under the supervision of
+L. Keller. Y. Wurm and J. Wang use genetic tools to study the social
+lives of ants. L. Keller works on various aspects of evolutionary
+ecology such as reproductive skew, sex allocation, caste determination
+as well as the molecular basis of aging and behavior in ants.
+
+
+\section{Supporting Information}
+\begin{description}
+\item [{Supporting~Figure~1:}] Graphical representation of microarray
+hybridizations. \textcolor{blue}{The unit of biological replication
+is the colony; each pool of five queens was hybridized to two different
+microarrays.} Each vertice represents an amplified RNA sample and
+each edge represents a microarray hybridization (a total of $3*8=24$
+hybridizations were conducted). Cy3-labeled samples are at the tails
+and Cy5-labeled samples are at the heads of arrows.
+\item [{Supporting~Table~1:}] List \textcolor{blue}{and annotations
+}of all fire ant genes significantly upregulated for at least one
+of the following comparisons: 6h vs 0h, 24h vs 6h, 24h vs 0h. Some
+genes are significant according to multiple microarray clones.
+\item [{Supporting~Table~2:}] List \textcolor{blue}{and annotations}
+of all fire ant genes significantly downregulated for at least one
+of the following comparisons: 6h vs 0h, 24h vs 6h, 24h vs 0h. Some
+genes are significant according to multiple microarray clones.
+\item [{Supporting~Table~3:}] List \textcolor{blue}{and annotations}
+of all fire ant genes significantly upregulated for at least one of
+the following comparisons: 6h vs 0h, 24h vs 6h, 24h vs 0h and also
+significantly higher in brains of honey bee queens than reproductive
+workers
+\item [{Supporting~Table~4:}] List \textcolor{blue}{and annotations}
+of all fire ant genes significantly upregulated for at least one of
+the following comparisons: 6h vs 0h, 24h vs 6h, 24h vs 0h and also
+significantly upregulated after mating in honey bee queens
+\item [{Supporting~Table~5:}] List \textcolor{blue}{and annotations}
+of all fire ant genes significantly upregulated for at least one of
+the following comparisons: 6h vs 0h, 24h vs 6h, 24h vs 0h and also
+significantly upregulated in\emph{ Anopheles gambiae} females in response
+to mating according to Vectorbase gene expression data
+\item [{Microarray~Data:}] Will be uploaded to the Gene Expression Omnibus
+database (access information will be put here).
+\end{description}
+
+\end{document}
