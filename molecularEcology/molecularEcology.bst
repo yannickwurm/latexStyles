@@ -1,7 +1,7 @@
 %%
 %% This is file `molecularEcology.bst',     version 2009-Sept-19th
 %% generated with the docstrip utility.
-%% AUTHOR:  yannick dot wurm at insalien .org
+%% AUTHOR:  yannick dot wurm at gmail dot com
 %%          http://yannick.poulet.org
 %%
 %% INFO:    Latex preamble requires natbib and 
