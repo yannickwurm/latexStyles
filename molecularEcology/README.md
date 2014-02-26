@@ -1,6 +1,7 @@
 Not recently tested. Last used in 2009, for [1].
 
-I don't know if it requires merlin.mbs. 
+Apologies that this repository is so messy - I'll clean it up next time I prep something for Mol Ecol in Latex.  Pull requests are welcome. 
+The .tex file is ugly because it was created with LyX. But should work anyways. 
 
 
 [1]: Wurm et al. Molecular Ecology. Changes in reproductive roles are associated 
